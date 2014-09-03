@@ -3,7 +3,7 @@ class Mint
 
   BASE_URL  = 'https://wwws.mint.com'
   LOGIN_URL = "#{BASE_URL}/loginUserSubmit.xevent"
-  CSV_URL   = "#{BASE_URL}/transactionDownload.event"
+  CSV_URL   = "#{BASE_URL}/transactionDownload.event?queryNew=&offset=0&filterType=cash&comparableType=8"
 
   def initialize(credentials)
     @credentials = credentials
